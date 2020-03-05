@@ -1,0 +1,449 @@
+.header__bot-line {
+    border-bottom: 0.5px solid #e5e5e5;
+}
+.header__filters{
+    height:65px;
+    background-color:#f7f7f7;
+}
+.aside__goods{
+    margin-top:60px;
+}
+.header__filters_navigation{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__filters_navigation  .header__filters_navigation_type{
+    position: relative;
+    width: 200px;
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Open Sans-bold', sans-serif;
+    font-weight: bold;
+}
+.header__filters_navigation_submenu{
+    position: absolute;
+    width: 100%;
+    top:0%;
+    opacity:0;
+    transform: scaleY(0);
+    transition:0.5s 0.1s;
+    z-index: 5;
+}
+.header__filters_navigation  .header__filters_navigation_type:hover .header__filters_navigation_submenu{
+    opacity:1;
+    transform: scaleY(1);
+    top:100%;
+}
+.header__filters_navigation_submenu li {
+    height: 35px;
+    background-color:white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding-left:20px;
+} 
+.header__filters_navigation_submenu li:hover{
+    background-color:#f7f7f7;
+    color:#f14a58;
+}
+.header__filters_navigation_submenu{
+    padding: 0%;
+    margin: 0%;
+    background-color:white;
+    border:0.5px solid #e5e5e5;
+    z-index: 10;
+    box-shadow: 1px 2px 3px #e5e5e5;
+}
+.header__filters_navigation_type:hover{
+    border:0.5px solid #e5e5e5;
+    border-bottom:none;
+    border-top:none;
+}
+.header__bot-line {
+    border-bottom:none;
+}
+.header__filters_navigation li ,.header__filters_navigation_submenu li{
+    cursor:pointer;
+}
+.section-1{
+    height:250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section-1__header_red{
+    color:#f14a58;
+}
+.section-1__header{
+    font-size: 24px;
+    font-family:'Open Sans-bold', sans-serif ;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+.section-1__desc{
+    font-size: 16px;
+    font-family: "Times New Roman";
+    font-style: italic;
+}
+main{
+    display: grid;
+    height:1000px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.main__row_item{
+    height: 436px;
+    width:235px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.main__row_item_long{
+    height: 460px;
+}
+.main__row_item_head{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    width: 169px;
+}
+.main__row_item_price{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+.main__row_item_price_old{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(117, 117, 117);
+    margin-right: 15px;
+    position: relative;
+}
+.main__row_item_price_old_red-line{
+    position: absolute;
+    z-index: 5;
+    top: -47%;
+    left: -2%;
+}
+.main__row_item:hover{
+    cursor: pointer;
+}
+.main__row_item:hover .main__row_item_photo_above{
+    opacity:0.7;
+    transform: scaleY(1);
+}
+.main__row_item_photo_above_text{
+    opacity:0;
+    transition:0.5s;
+    position: absolute;
+    top: 37%;
+    left: 30%;
+}
+.main__row_item:hover .main__row_item_photo_above_text{
+    opacity:1;
+    z-index: 15;
+}
+.main__row_item_photo_above{
+    position: absolute;
+    height:340px;
+    width: 100%;
+    top:0%;
+    left:0%;
+    opacity:0;
+    transform: scaleY(0);
+    transition:0.5s 0.1s;
+    z-index: 5;
+    background-color:#7b7b7b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__row_item_photo_above_text{
+    font-size: 22px;
+    font-family: 'Open Sans-bold', sans-serif ;
+    color: rgb(241, 74, 88);
+    font-weight: bold;
+}
+.main__row_item:hover .main__row_item_head{
+    color:rgb(241, 74, 88);
+}
+.section-2{
+    height:250px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.section-2__button{
+    font-size: 24px;
+    font-family: 'Open Sans-bold', sans-serif;
+    color: black;
+    font-weight: bold;
+    padding: 30px 100px;
+    border:0.5px solid black;
+}
+.section-2__button:hover{
+    color:rgb(241, 74, 88);
+    border:0.5px solid rgb(241, 74, 88);
+}
+aside{
+    max-width: 1300px;
+    height:385px;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    margin: 0 auto;
+    margin-bottom: 0.5px;
+}
+.aside__adidas_head,.aside__jeans_head,.aside__sale_head{
+    font-size: 28px;
+    font-family: 'Open Sans-bold', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    position: absolute;
+    top: 15%;
+    left: 63%;
+}
+.aside__jeans_head{
+    position: absolute;
+    top: 72%;
+    left: 19%;
+}
+.aside__adidas_desc,.aside__sale_desc{
+    font-size: 16px;
+    font-family: "Times New Roman";
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    position: absolute;
+    top: 26%;
+    left: 71%;
+    border-bottom:0.5px solid #e5e5e5;
+    border-top:0.5px solid #e5e5e5;
+}
+.aside__adidas,.aside__jeans{
+    position: relative;
+}
+.aside__jeans_desc{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 81%;
+    left: 42%;
+}
+.aside__sale {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    height:385px;
+    cursor: pointer;
+}
+.aside__sale_head{
+    color:rgb(241, 74, 88);
+    top: 72%;
+    left: 42%;
+}
+.aside__sale_desc{
+    color:rgb(241, 74, 88);
+    top: 83%;
+    left: 46%;
+}
+.footer__upper {
+    border-top:none;
+}
+.aside__goods-item a{
+    height: 436px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.main__row_item  a{
+    height: 436px;
+    width: 235px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.item-hiden{
+   display: none;
+}
+.aside__adidas_desc{
+    border:none;
+}
+@media screen and (min-width:700px) and (max-width:1100px){
+    .wraper{
+        width:690px;
+    }
+    .aside__goods-item {
+        width:27%
+    }
+    .aside__goods {
+        width: 690px;
+    }
+    .hiden{
+        display: none;
+    }
+    .section-1 {
+        height: 350px;
+    }
+    .section-1__header {
+        font-size: 24px;
+        text-align: center;
+        line-height: 40px;
+    }
+    .section-1__desc{
+        text-align: center;
+        line-height: 40px;
+    }
+    .item-hiden{
+        display:flex;
+    }
+    main {
+        height: 1370px;
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns:32% 32% 32% ;
+    }
+    .main__row_item {
+        height: 377px;
+        width: 217px;
+    }
+    .main__row_item .main__row_item_photo{
+        height: 286px;
+    }
+    aside {
+        max-width: 1300px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        margin: 0 auto;
+        margin-bottom: 0.5px;
+    }
+    .aside__adidas{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+    }
+    .aside__adidas a,.aside__jeans a{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .aside__adidas a img,.aside__jeans a img{
+        width: 100%;
+        height:auto;
+    }
+    .footer__upper_right_top_right{
+        position: absolute;
+        top: 22%;
+        left: 16%;
+    }
+    .footer__upper_right{
+        position: relative;
+    }
+    .footer__bottom-left, .footer__bootom_part{
+        font-size: 12px;
+    }
+    .footer__bottom-middle{
+        font-size: 16px;
+        margin-left: 52px;
+    }
+}
+.mob-hiden{
+    display: none;
+}
+@media screen and (min-width:300px) and (max-width:500px){
+    header{
+        height: 70px;
+    }
+    .header__filters{
+        height: 50px;
+    }
+    .section-1{
+        height: 305px;
+    }
+    .section-1__header{
+        font-size: 18px;
+        text-align: center;
+        padding: 0 63px 0 63px;
+    }
+    .section-1__desc{
+        font-size: 14px;
+        text-align: center;
+        padding: 0 63px 0 63px;
+      }
+      main {
+        height: 1030px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .main__row_item {
+        height: 315px;
+    }
+    .hiden-mob{
+        display: none;
+    }
+    .mob-hiden{
+        display: flex;
+    }
+    .main__row_item_photo{
+        height:225px;
+        width:100%;
+    }
+    .main__row_item,.main__row_item a{
+        width:100%;
+    }
+    .main__row_item_head{
+        font-size: 12px;
+    }
+    .section-2__button{
+        padding: 25px 60px;
+    }
+    aside {
+        max-width: 1300px;
+        height: 240px;
+        display: grid;
+        grid-template-columns: none;
+        margin: 0 auto;
+        margin-bottom: 0.5px;
+    }
+    .aside__adidas,.aside__adidas a,.aside__adidas a img{
+        width:100%;
+    }
+    .header__filters_navigation .header__filters_navigation_type{
+        font-size: 9px;
+    }
+    .aside__adidas_head{
+        font-size: 20px;
+        top: 12%;
+        left: 56%;
+    }
+    .aside__adidas_desc{
+        font-size: 14px;
+        top:25%;
+        left:65%;
+    }
+}
+.user_chosen{
+   position: absolute;
+   top:65%;
+   left:5%;
+}
+

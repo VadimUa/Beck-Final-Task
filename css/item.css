@@ -1,0 +1,457 @@
+aside{
+    max-width: 1300px;
+    height:385px;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    margin: 0 auto;
+    margin-bottom: 0.5px;
+}
+.aside__adidas_head,.aside__jeans_head,.aside__sale_head{
+    font-size: 28px;
+    font-family: 'Open Sans-bold', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    position: absolute;
+    top: 15%;
+    left: 63%;
+}
+.aside__jeans_head{
+    position: absolute;
+    top: 72%;
+    left: 19%;
+}
+.aside__adidas_desc,.aside__sale_desc{
+    font-size: 16px;
+    font-family: "Times New Roman";
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    position: absolute;
+    top: 26%;
+    left: 71%;
+    border-bottom:0.5px solid #e5e5e5;
+    border-top:0.5px solid #e5e5e5;
+}
+.aside__adidas,.aside__jeans{
+    position: relative;
+}
+.aside__jeans_desc{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 81%;
+    left: 42%;
+}
+.aside__sale {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    height:385px;
+    cursor: pointer;
+}
+.aside__sale_head{
+    color:rgb(241, 74, 88);
+    top: 72%;
+    left: 42%;
+}
+.aside__sale_desc{
+    color:rgb(241, 74, 88);
+    top: 83%;
+    left: 46%;
+}
+.footer__upper {
+    border-top:none;
+}
+.section-1{
+    height:65px;
+    display: flex;
+    align-items:center;
+}
+.section-1__text{
+    font-size: 16px;
+    font-family: 'Open Sans-bold', sans-serif;
+    font-weight: bold;
+    padding-left: 20px;
+}
+.section-1__text a:hover{
+    color:rgb(241, 74, 88);
+}
+main{
+    height:685px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    box-sizing: border-box;
+}
+.main__left{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding-bottom: 30px;
+}
+.main__left_big{
+    width:100%;
+    height:395px;
+    margin: -1px;
+}
+.main__left_small{
+    margin: 0px;
+    width:100%;
+    height:130px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.main__right{
+    padding-left: 50px;
+}
+.main__right_content{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    height:520px;
+}
+.main__right_head{
+    font-size: 26px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-top: 92px;
+}
+.main__right_desc{
+    font-size: 16px;
+    font-family: "Times New Roman";
+    font-style: italic;
+    margin-top: 25px;
+}
+.main__right_price{
+    margin-top: 50px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+.main__right_size{
+    margin-top:50px;
+}
+.main__right_size_category,.main__right_color_category{
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 50px;
+}
+.main__right_size_item,.main__right_color_item{
+    font-size: 14px;
+    font-family: 'Open Sans-bold', sans-serif;
+    font-weight: bold;
+    margin-right: 30px;
+    cursor:pointer;
+    padding: 12px 20px 12px 20px;
+}
+.main__right_color{
+    margin-top: 40px;
+}
+.main__right_color_category{
+    margin-right: 45px;
+}
+.main__right_add{
+    margin-top:87px;
+    margin-left: 94px;
+    font-size: 24px;
+    font-family:'Open Sans-bold', sans-serif ;
+    padding: 28px 106px;
+    border:0.5px solid #e5e5e5;
+}
+.main__right_add:hover{
+    color:rgb(241, 74, 88);
+}
+.active{
+    border:0.5px solid #e5e5e5;
+}
+.main__right_color_item{
+    margin-right:45px;
+}
+@media screen and (min-width:700px) and (max-width:1100px){
+    .wraper{
+        width:690px;
+    }
+    .hiden{
+        display: none;
+    } .footer__upper_right_top_right{
+        position: absolute;
+        top: 22%;
+        left: 16%;
+    }
+    .footer__upper_right{
+        position: relative;
+    }
+    .footer__bottom-left, .footer__bootom_part{
+        font-size: 12px;
+    }
+    .footer__bottom-middle{
+        font-size: 16px;
+        margin-left: 52px;
+    }
+    main{
+        height:1015px;
+        grid-template-columns: none;
+        grid-template-rows: 375px 540px;
+    }
+    .main__left {
+        padding-bottom: 0px;
+        width:100%;
+        height:342px;
+        display: grid;
+        grid-template-columns: 75% 25%;
+        margin-top: 30px;
+    }
+    .main__left_big{
+        height:342px;
+        width:516px;
+    }
+    .main__left_big img{
+        width: 100%;
+        height:100%;
+    }
+    .main__left_small {
+        width: 172px;
+        height:342px;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(3,1fr);
+    }
+    .main__left_small img{
+        width: 100%;
+        height: 100%;
+        margin-left: -3px;
+    }
+    .main__right_content {
+        align-items: center;
+    }
+    .main__right_add {
+        margin-left: 0px;
+        margin-bottom: 100px;
+    }
+    aside {
+        max-width: 1300px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        margin: 0 auto;
+        margin-bottom: 0.5px;
+    }
+    .aside__adidas{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+    }
+    .aside__adidas a,.aside__jeans a{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .aside__adidas a img,.aside__jeans a img{
+        width: 100%;
+        height:auto;
+    }
+    .aside__adidas_desc{
+        border:none;
+    }
+}
+#menu__toggle {
+    opacity: 0;
+  }
+  .menu__btn {
+    display: flex; 
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;  width: 26px;
+    height: 26px;  cursor: pointer;
+    z-index: 1;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;  width: 100%;
+    height: 2px;  background-color: #616161;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    margin: 0;  list-style: none;
+  }
+  .menu__item {
+    display: block;
+    padding: 12px 24px;  color: #333;  font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;  text-decoration: none;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+    background-color:#f14a58;
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+    background-color:#f14a58;
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+    background-color:#f14a58;
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    right: 0;
+  }
+  .menu__btn {
+    left: 331px;
+    z-index: 100;
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 120px;
+    right: -100%;
+    width: 388px;
+    height: 597px;
+    margin: 0;
+    list-style: none;
+    background-color: white;
+    z-index: 50;
+}
+.menu__item{
+    font-size: 24px;
+    font-family: 'Open Sans-bold', sans-serif;
+    color: black;
+    font-weight: bold;
+}
+.menu__item:hover{
+    color:#f14a58;
+    background-color: white;
+}
+.item_first{
+    padding: 0px 12px 0px 25px;
+    margin-top:37px;
+
+}
+.menu__item{
+    margin-top: 33px;
+    padding: 0px 12px 0px 25px;
+}
+.search_item{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+.icon{
+    position: relative;
+}
+@media screen and (min-width:300px) and (max-width:500px){
+    .hiden-mob{
+        display: none;
+    }
+    .mob-hiden{
+        display: flex;
+    }
+    aside {
+        max-width: 1300px;
+        height: 240px;
+        display: grid;
+        grid-template-columns: none;
+        margin: 0 auto;
+        margin-bottom: 0.5px;
+    }
+    .aside__adidas,.aside__adidas a,.aside__adidas a img{
+        width:100%;
+    }
+    .header__filters_navigation .header__filters_navigation_type{
+        font-size: 9px;
+    }
+    .aside__adidas_head{
+        font-size: 20px;
+        top: 12%;
+        left: 56%;
+    }
+    .aside__adidas_desc{
+        font-size: 14px;
+        top:25%;
+        left:65%;
+    }
+    main{
+        height:930px;
+        grid-template-columns:none;
+        width:100%;
+    }
+    .main__left,.main__left_big img{
+        width:100%;
+    }
+    .main__left_big,.main__left_big img{
+        height:223px;
+        width: 335px;
+    }
+    .main__left_small{
+        height:75px;
+        width: 335px;
+    }
+    .main__left_small img{
+        height:auto;
+        width: 100%;
+    }
+    .main__right_head {
+        font-size: 20px;
+        margin-top: 50px;
+        text-align: center;
+        align-self: center;
+    }
+    .main__right {
+        padding-left: 0px;
+        position: relative;
+    }
+    .main__right_desc {
+        font-size: 14px;
+        margin-top: 80px;
+        text-align: center;
+        line-height: 27px;
+    }
+    .main__right_price {
+        font-size: 18px;
+        position: absolute;
+        top: 10%;
+        left: 38%;
+    }
+    .main__right_content{
+        height:592px;
+    }
+    .main__right_size_item, .main__right_color_item {
+        font-size: 13px;
+        margin-right: 13px;
+        padding: 15px 20px 15px 20px;
+    }
+    .main__right_size_category, .main__right_color_category {
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+        margin-right: 34px;
+    }    
+    .main__right_add {
+        margin-top: 85px;
+        margin-left: 60px;
+        margin-bottom: 100px;
+        font-size: 18px;
+        padding: 22px 60px;
+    }
+}
