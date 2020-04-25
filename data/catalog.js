@@ -1,4 +1,4 @@
-export function getData(){ window.catalog = [{
+export let catalog = [{
     id: '014c271a-2811-47fc-b63f-ba279a4ec830',
     dateAdded: '2017-05-15T16:58:40.000Z',
     title: 'Monki Festival Knitted',
@@ -195,4 +195,3 @@ export function getData(){ window.catalog = [{
     thumbnail: 'thumbnail path', // replace with image extracted from item layout
     preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
 }];
-}

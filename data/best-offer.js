@@ -1,4 +1,4 @@
-window.bestOffer = {
+export let bestOffer = {
     discount: 15,
     left: [
         '8c061815-6a7d-4465-bb78-1bdc6c5adebf', // Only Skinny Jeans

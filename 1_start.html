@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style_start.css">
-    <script defer src="./js/script.js"></script>
+     <script defer type="module" src="./js/start.js"></script>
     <title>Homepage</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
                     <span class="header__top-line_right_email hiden-mob"><a href="#">E-mail sing up</a></span>
                     <div class="header__top_right_bag-block">
                         <span class="header__top-line_right_bag"> <img src="./img/ico_bag.png" alt="bag"></span>
-                        <span class="header__top-line_right_bag-desc"><a href="#"> Bag (0)</a></span> 
+                        <span class="header__top-line_right_bag-desc"><a href="#"> <span class="bag_price"> Bag</span> (<span class="quantity">0</span>)</a></span> 
                         
                         <div class="header__burger mob-hiden">
                             <div class="hamburger-menu">
@@ -100,12 +100,12 @@
             <article>
                 <div class="article__new">
                     <div class="article__new_content">
-                        <a href=""> <img src="./img/shevrone-up.png" alt="up"></a>
+                        <a href="" class="up"> <img src="./img/shevrone-up.png" alt="up"></a>
                         <img src="./img/skiny.png" class="article__new_content_photo" alt="skinny">
                         <span class="article__new_content_photo-desc">New</span>
                         <span class="article__new_content_head">Only Skinny Jeans</span>
                         <span class="article__new_content_desc">£65.50</span>
-                        <a href=""> <img src="./img/shevrone-down.png" alt="down"></a> 
+                        <a href="" class="down"> <img src="./img/shevrone-down.png" alt="down"></a> 
                     </div>
                 </div>
                 <div class="article__plus">
@@ -124,7 +124,7 @@
                     <img src="./img/equal.png" alt="equal" class="article__equal_img">
                 </div>
                 <div class="article__total">
-                    <span class="article__total_old">£161.00
+                    <span class="article__total_old"> <span class="old">£161.00</span>
                         <img src="./img/red_line.png" class="article__total_old_line" alt="red-line">
                     </span>
                     <span class="article__total_new">£146.00</span>

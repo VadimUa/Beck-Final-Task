@@ -180,7 +180,10 @@ font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
-@media screen and (min-width:600px) and (max-width:980px){
+@media screen and (min-width:600px) and (max-width:1100px){
+    .main__item_photo_above {
+        height: 100%;
+    }
     .main__item {
         margin-top: 30px;
         display: grid;
@@ -378,7 +381,7 @@ font-family: 'Roboto', sans-serif;
 .icon{
     position: relative;
 }
-@media screen and (min-width:300px) and (max-width:500px){
+@media screen and (min-width:300px) and (max-width:600px){
     .hiden-mob{
         display: none;
     }
@@ -503,5 +506,8 @@ font-family: 'Roboto', sans-serif;
         position: absolute;
         top: 83%;
         left: 41%;
+    }
+    .main__item_photo_above {
+        height: 100%;
     }
 }

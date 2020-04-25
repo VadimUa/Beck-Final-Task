@@ -533,7 +533,7 @@ hr::after{
         left:57%;
     }
 }
-@media screen and (min-width:300px) and (max-width:500px){
+@media screen and (min-width:300px) and (max-width:600px){
     .wraper{
         width: 335px;
     }
@@ -837,4 +837,7 @@ hr::after{
 }
 .icon{
     position: relative;
+}
+.after_click{
+    font-family:'Roboto', sans-serif ;
 }

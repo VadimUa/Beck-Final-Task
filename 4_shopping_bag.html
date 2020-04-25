@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style_start.css">
     <link rel="stylesheet" href="./css/shopping_bag.css">
-    <script defer src="./js/script.js"></script>
+    <script defer type="module" src="./js/shopping_bag.js"></script>
 </head>
 <body>
     <div class="wraper">
@@ -21,7 +21,7 @@
                     <span class="header__top-line_right_email hiden-mob"><a href="#">E-mail sing up</a></span>
                     <div class="header__top_right_bag-block">
                         <span class="header__top-line_right_bag"> <img src="./img/ico_bag.png" alt="bag"></span>
-                        <span class="header__top-line_right_bag-desc"><a href="#"> Bag (0)</a></span> 
+                        <span class="header__top-line_right_bag-desc"><a href="#"><span class="bag_price"> Bag</span> (<span class="quantity">0</span>)</a></span> 
                         
                         <div class="header__burger mob-hiden">
                             <div class="hamburger-menu">
@@ -74,7 +74,7 @@
     </div>
         <hr>
         <div class="wraper">
-        <main>
+        <main class="main">
             <div class="main__item first">
                 <div class="main__item_photo">
                     <img src="./img/skiny.png" alt="skiny">
@@ -97,9 +97,9 @@
                     </div>
                     <div class="main__item_text_quantity">
                         <span class="main__item_text_quantity_category">Quantity:</span>
-                        <span class="main__item_text_size_data"><a href=""><img src="./img/minus.png" alt="minus"></a> 1 <a href=""><img src="./img/add.png" alt="plus"></a></span>
+                        <span class="main__item_text_size_data"><a href=""><img class="minus" src="./img/minus.png" alt="minus"></a> <span class="counter"> 1</span> <a href=""><img src="./img/add.png"class="plus" alt="plus"></a></span>
                     </div>
-                    <span class="main__item_text_remove"><a href="">Remove item</a> </span>
+                    <span class="main__item_text_remove"><a href="" class ="remove">Remove item</a> </span>
                 </div>
             </div>
             <div class="main__item">
@@ -123,9 +123,9 @@
                     </div>
                     <div class="main__item_text_quantity">
                         <span class="main__item_text_quantity_category">Quantity:</span>
-                        <span class="main__item_text_size_data"><a href=""><img src="./img/minus.png" alt="minus"></a> 1 <a href=""><img src="./img/add.png" alt="plus"></a></span>
+                        <span class="main__item_text_size_data"><a href=""><img src="./img/minus.png" class="minus" alt="minus"></a> <span class="counter"> 1</span> <a href=""><img src="./img/add.png"class="plus" alt="plus"></a></span>
                     </div>
-                    <span class="main__item_text_remove"><a href="">Remove item</a> </span>
+                    <span class="main__item_text_remove"><a href="" class ="remove">Remove item</a> </span>
                 </div>
             </div>
             <div class="main__item main_0">
@@ -137,7 +137,7 @@
                     <span class="main__item_photo_above_text">Edit item</span>
                 </div>
                 <div class="main__item_text">
-                    <span class="main__item_text_head">Boyfriend T-Shirt with Bohemian Print</span>
+                    <span class="main__item_text_head">Boyfriend T-Shirt with Bohemian print</span>
                     <span class="main__item_text_price">£90.00</span>
                     <div class="main__item_text_colour">
                         <span class="main__item_text_colur_category">Color:</span>
@@ -149,9 +149,9 @@
                     </div>
                     <div class="main__item_text_quantity">
                         <span class="main__item_text_quantity_category">Quantity:</span>
-                        <span class="main__item_text_size_data"><a href=""><img src="./img/minus.png" alt="minus"></a> 1 <a href=""><img src="./img/add.png" alt="plus"></a></span>
+                        <span class="main__item_text_size_data"><a href=""><img src="./img/minus.png" class="minus" alt="minus"></a> <span class="counter"> 1</span> <a href=""><img src="./img/add.png"class="plus" alt="plus"></a></span>
                     </div>
-                    <span class="main__item_text_remove"><a href="">Remove item</a> </span>
+                    <span class="main__item_text_remove"><a href="" class ="remove">Remove item</a> </span>
                 </div>
             </div>
             <div class="main__item main_0" >
@@ -176,9 +176,9 @@
                     </div>
                     <div class="main__item_text_quantity">
                         <span class="main__item_text_quantity_category">Quantity:</span>
-                        <span class="main__item_text_size_data"><a href=""><img src="./img/minus.png" alt="minus"></a> 1 <a href=""><img src="./img/add.png" alt="plus"></a></span>
+                        <span class="main__item_text_size_data"><a href=""><img class="minus" src="./img/minus.png" alt="minus"></a> <span class="counter"> 1</span>  <a href=""><img class="plus" src="./img/add.png" alt="plus"></a></span>
                     </div>
-                    <span class="main__item_text_remove"><a href="">Remove item</a> </span>
+                    <span class="main__item_text_remove"><a href="" class="remove">Remove item</a> </span>
                 </div>
             </div>
         </main>
@@ -194,7 +194,7 @@
                 <a href="#"><span class="section_main_checkout">Checkout</span></a>
                 <div class="section-2_main_total">
                     <span class="section-2_main_total_discount">Applied discount:£15.00</span>
-                    <span class="section-2_main_total_price">Total price:£236.50</span>
+                    <span class="section-2_main_total_price">Total price: <span class="bottom_price"> £236.50</span></span>
                 </div>
             </div>
         </section>
